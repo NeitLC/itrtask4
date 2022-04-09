@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/MappedPaths/=BOOTSTRAP_002DICONS_002ECSS/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/MappedPaths/=BOOTSTRAP_002DICONS_002EMIN_002ECSS/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/MappedPaths/=WWWROOT_005CJS_005CINDEX_002EJS/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/MappedPaths/=WWWROOT_005CLIB_005CBOOTSTRAP_002DICONS_005CFONT/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=BOOTSTRAP_002DICONS_002ECSS/@EntryIndexedValue">bootstrap-icons.css</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=BOOTSTRAP_002DICONS_002EMIN_002ECSS/@EntryIndexedValue">bootstrap-icons.min.css</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=WWWROOT_005CJS_005CINDEX_002EJS/@EntryIndexedValue">wwwroot\js\index.js</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=WWWROOT_005CLIB_005CBOOTSTRAP_002DICONS_005CFONT/@EntryIndexedValue">wwwroot\lib\bootstrap-icons\font</s:String></wpf:ResourceDictionary>
