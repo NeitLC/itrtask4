@@ -10,7 +10,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    // [Authorize]
+    [Authorize]
     public class HomeController : Controller
     {
 
