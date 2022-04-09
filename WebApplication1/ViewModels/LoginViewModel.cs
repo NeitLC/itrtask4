@@ -11,7 +11,5 @@ namespace WebApplication1.ViewModels
         [Required]
         [Display(Name = "Passowrd")]
         public string Password { get; set; }
-
-        public string ReturnUrl { get; set; }
     }
 }

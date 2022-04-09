@@ -45,12 +45,10 @@ namespace WebApplication1.Controllers
                     await _userManager.UpdateAsync(user);
                     return RedirectToAction("Index", "Home");
                 }
-                else
+
+                foreach (var error in result.Errors)
                 {
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError(string.Empty, error.Description);
-                    }
+                    ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
 
@@ -58,9 +56,9 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login(string returnUrl = null)
+        public IActionResult Login()
         {
-            return View(new LoginViewModel {ReturnUrl = returnUrl});
+            return View();
         }
 
         [HttpPost]
@@ -75,19 +73,9 @@ namespace WebApplication1.Controllers
                     var user = await _userManager.FindByNameAsync(model.UserName);
                     user.LastLoginDate = DateTimeOffset.Now;
                     await _userManager.UpdateAsync(user);
-                    if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
-                    {
-                        return Redirect(model.ReturnUrl);
-                    }
-                    else
-                    {
-                        return RedirectToAction("Index", "Home");
-                    }
+                    return RedirectToAction("Index", "Home");
                 }
-                else
-                {
-                    ModelState.AddModelError("", "Invalid login attempt");
-                }
+                ModelState.AddModelError("", "Invalid login attempt");
             }
 
             return View(model);
